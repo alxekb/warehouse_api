@@ -14,6 +14,7 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 RSpec.configure do |config|
+  config.include ActionCable::TestHelper
   config.include FactoryBot::Syntax::Methods
   config.fixture_path = Rails.root.join('spec/fixtures').to_s
   config.use_transactional_fixtures = true
