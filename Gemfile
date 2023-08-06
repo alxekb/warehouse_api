@@ -15,6 +15,7 @@ gem 'sqlite3', '~> 1.4'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
+  gem 'action-cable-testing', '~> 0.6.1'
   gem 'database_cleaner', '~> 2.0'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.2'
